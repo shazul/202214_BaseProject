@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { ClubModule } from './club/club.module';
 import { MemberModule } from './member/member.module';
 import { ClubMemberService } from './club-member/club-member.service';
+import { ClubMemberController } from './club-member/club-member.controller';
 
 @Module({
   imports: [ClubModule, MemberModule,
@@ -22,7 +23,7 @@ import { ClubMemberService } from './club-member/club-member.service';
       keepConnectionAlive: true
     }),
   ],
-  controllers: [AppController],
+  controllers: [AppController, ClubMemberController],
   providers: [AppService, ClubMemberService],
 })
 export class AppModule {}

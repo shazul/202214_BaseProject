@@ -1,0 +1,290 @@
+{
+    "id": "48dfcbda-e6cf-4132-b0a2-9e6158eccaa6",
+    "name": "Members",
+    "timestamp": "2022-09-12T00:47:16.091Z",
+    "collection_id": "5836993-f611308c-c805-41af-abe5-177516760e14",
+    "folder_id": 0,
+    "environment_id": "0",
+    "totalPass": 12,
+    "totalFail": 0,
+    "results": [
+        {
+            "id": "2b97137a-5aef-4022-92dd-ec2ad150311b",
+            "name": "Add a member",
+            "url": "http://localhost:3000/api/v1/members",
+            "time": 8,
+            "responseCode": {
+                "code": 201,
+                "name": "Created"
+            },
+            "tests": {
+                "Status code is 201": true
+            },
+            "testPassFailCounts": {
+                "Status code is 201": {
+                    "pass": 1,
+                    "fail": 0
+                }
+            },
+            "times": [
+                8
+            ],
+            "allTests": [
+                {
+                    "Status code is 201": true
+                }
+            ]
+        },
+        {
+            "id": "d404426c-4d57-41ef-88fd-6c36bced12ce",
+            "name": "Get all the members",
+            "url": "http://localhost:3000/api/v1/members",
+            "time": 13,
+            "responseCode": {
+                "code": 200,
+                "name": "OK"
+            },
+            "tests": {
+                "Number of members > 0": true,
+                "Status code is 200": true
+            },
+            "testPassFailCounts": {
+                "Number of members > 0": {
+                    "pass": 1,
+                    "fail": 0
+                },
+                "Status code is 200": {
+                    "pass": 1,
+                    "fail": 0
+                }
+            },
+            "times": [
+                13
+            ],
+            "allTests": [
+                {
+                    "Number of members > 0": true,
+                    "Status code is 200": true
+                }
+            ]
+        },
+        {
+            "id": "40fafc5d-c060-4076-b9ee-9c9f7b5685b5",
+            "name": "Get a member",
+            "url": "http://localhost:3000/api/v1/members/36054d08-9fcf-41d5-bc9c-1fc59a9f2caa",
+            "time": 7,
+            "responseCode": {
+                "code": 200,
+                "name": "OK"
+            },
+            "tests": {
+                "Status code is 200": true
+            },
+            "testPassFailCounts": {
+                "Status code is 200": {
+                    "pass": 1,
+                    "fail": 0
+                }
+            },
+            "times": [
+                7
+            ],
+            "allTests": [
+                {
+                    "Status code is 200": true
+                }
+            ]
+        },
+        {
+            "id": "2e35f8d6-0a49-441c-baac-ac120a7ecbf6",
+            "name": "Get an invalid member",
+            "url": "http://localhost:3000/api/v1/members/00000000-0000-0000-0000-000000000000",
+            "time": 7,
+            "responseCode": {
+                "code": 404,
+                "name": "Not Found"
+            },
+            "tests": {
+                "Status code is 404": true,
+                "Get expected error message": true
+            },
+            "testPassFailCounts": {
+                "Status code is 404": {
+                    "pass": 1,
+                    "fail": 0
+                },
+                "Get expected error message": {
+                    "pass": 1,
+                    "fail": 0
+                }
+            },
+            "times": [
+                7
+            ],
+            "allTests": [
+                {
+                    "Status code is 404": true,
+                    "Get expected error message": true
+                }
+            ]
+        },
+        {
+            "id": "82faf8ec-d2c3-4c60-8252-b4b3ad33de42",
+            "name": "Update a member",
+            "url": "http://localhost:3000/api/v1/members/36054d08-9fcf-41d5-bc9c-1fc59a9f2caa",
+            "time": 18,
+            "responseCode": {
+                "code": 200,
+                "name": "OK"
+            },
+            "tests": {
+                "Status code is 200": true
+            },
+            "testPassFailCounts": {
+                "Status code is 200": {
+                    "pass": 1,
+                    "fail": 0
+                }
+            },
+            "times": [
+                18
+            ],
+            "allTests": [
+                {
+                    "Status code is 200": true
+                }
+            ]
+        },
+        {
+            "id": "643dc0c8-c28f-4f54-8d87-25bca8dd37b9",
+            "name": "Update an invalid member",
+            "url": "http://localhost:3000/api/v1/members/00000000-0000-0000-0000-000000000000",
+            "time": 6,
+            "responseCode": {
+                "code": 404,
+                "name": "Not Found"
+            },
+            "tests": {
+                "Status code is 404": true,
+                "Get expected error message": true
+            },
+            "testPassFailCounts": {
+                "Status code is 404": {
+                    "pass": 1,
+                    "fail": 0
+                },
+                "Get expected error message": {
+                    "pass": 1,
+                    "fail": 0
+                }
+            },
+            "times": [
+                6
+            ],
+            "allTests": [
+                {
+                    "Status code is 404": true,
+                    "Get expected error message": true
+                }
+            ]
+        },
+        {
+            "id": "56df0606-5a35-4f6e-bc45-6fe8668553c2",
+            "name": "Delete a member",
+            "url": "http://localhost:3000/api/v1/members/36054d08-9fcf-41d5-bc9c-1fc59a9f2caa",
+            "time": 8,
+            "responseCode": {
+                "code": 204,
+                "name": "No Content"
+            },
+            "tests": {
+                "Status code is 204": true
+            },
+            "testPassFailCounts": {
+                "Status code is 204": {
+                    "pass": 1,
+                    "fail": 0
+                }
+            },
+            "times": [
+                8
+            ],
+            "allTests": [
+                {
+                    "Status code is 204": true
+                }
+            ]
+        },
+        {
+            "id": "c809cb3b-6917-42a4-bad5-b2f353ab5eca",
+            "name": "Delete an invalid member",
+            "url": "http://localhost:3000/api/v1/members/00000000-0000-0000-0000-000000000000",
+            "time": 5,
+            "responseCode": {
+                "code": 404,
+                "name": "Not Found"
+            },
+            "tests": {
+                "Status code is 404": true,
+                "Get expected error message": true
+            },
+            "testPassFailCounts": {
+                "Status code is 404": {
+                    "pass": 1,
+                    "fail": 0
+                },
+                "Get expected error message": {
+                    "pass": 1,
+                    "fail": 0
+                }
+            },
+            "times": [
+                5
+            ],
+            "allTests": [
+                {
+                    "Status code is 404": true,
+                    "Get expected error message": true
+                }
+            ]
+        }
+    ],
+    "count": 1,
+    "totalTime": 72,
+    "collection": {
+        "requests": [
+            {
+                "id": "2b97137a-5aef-4022-92dd-ec2ad150311b",
+                "method": "POST"
+            },
+            {
+                "id": "d404426c-4d57-41ef-88fd-6c36bced12ce",
+                "method": "GET"
+            },
+            {
+                "id": "40fafc5d-c060-4076-b9ee-9c9f7b5685b5",
+                "method": "GET"
+            },
+            {
+                "id": "2e35f8d6-0a49-441c-baac-ac120a7ecbf6",
+                "method": "GET"
+            },
+            {
+                "id": "82faf8ec-d2c3-4c60-8252-b4b3ad33de42",
+                "method": "PUT"
+            },
+            {
+                "id": "643dc0c8-c28f-4f54-8d87-25bca8dd37b9",
+                "method": "PUT"
+            },
+            {
+                "id": "56df0606-5a35-4f6e-bc45-6fe8668553c2",
+                "method": "DELETE"
+            },
+            {
+                "id": "c809cb3b-6917-42a4-bad5-b2f353ab5eca",
+                "method": "DELETE"
+            }
+        ]
+    }
+}

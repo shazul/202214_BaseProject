@@ -1,8 +1,10 @@
 /* eslint-disable prettier/prettier */
 import { Module } from '@nestjs/common';
 import { ClubService } from './club.service';
+import { ClubController } from './club.controller';
 
 @Module({
-  providers: [ClubService]
+  providers: [ClubService],
+  controllers: [ClubController]
 })
 export class ClubModule {}
